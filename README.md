@@ -4,8 +4,8 @@ Sometimes you may want to load a Jupyter notebook from your repo to colab and ru
 
 ## Pre-requisites
 
-- The repo where your notebook is must be public
-- Your system must have `python` installed
+- __The repo where your notebook is must be public__
+- __Your system must have `python` installed__
 
 ## Installation and Usage
 
