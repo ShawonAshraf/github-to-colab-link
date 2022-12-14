@@ -1,6 +1,6 @@
 # Github to Colab Link Generator
 
-Sometimes you may want to load a Jupyter notebook from your repo to colab and run it there. Other times you may just want to add a colab link to your repositories readme page. Sure you can download and then import to colab but that may not always be ideal. The goal of this package is to short-circuit that process so you don't have to go through extra clicks to create a colab link.
+Sometimes you may want to load a Jupyter notebook from your repo to colab and run it there. Other times you may just want to add a colab link to your repositories readme page. Sure you can download and then import to colab but that may not always be ideal. The goal of this cli tool is to short-circuit that process so you don't have to go through extra clicks.
 
 ## Pre-requisites
 
