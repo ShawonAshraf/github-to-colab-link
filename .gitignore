@@ -2,3 +2,6 @@ venv/
 venv_test/
 __pycache__/
 .vscode/
+build/
+dist/
+mytool.egg-info
