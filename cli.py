@@ -2,7 +2,8 @@ import argparse
 
 from link import generate_colab_link, generate_colab_link_markdown
 
-if __name__ == "__main__":
+
+def run():
     parser = argparse.ArgumentParser(
         description="Generates a Google Link for your notebook in a Github repo")
 
@@ -24,3 +25,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     print(args.generate(args.gh))
+
+
+if __name__ == "__main__":
+    run()
