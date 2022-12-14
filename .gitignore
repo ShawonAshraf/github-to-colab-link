@@ -4,4 +4,4 @@ __pycache__/
 .vscode/
 build/
 dist/
-mytool.egg-info
+github_to_colab_link.egg-info
