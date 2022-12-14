@@ -21,18 +21,23 @@ def generate_colab_link(github_url_for_notebook: str) -> str:
     return colab_link
 
 
-if __name__ == "__main__":
-    gh = "https://github.com/ShawonAshraf/nlu-jointbert-dl2021/blob/main/notebooks/nlu_jointbert_dl21.ipynb"
-    target = "https://colab.research.google.com/github/ShawonAshraf/nlu-jointbert-dl2021/blob/main/notebooks/nlu_jointbert_dl21.ipynb"
-
-    assert generate_colab_link(gh) == target
-    print(generate_colab_link(gh))
-
-
 """
 returns a string in markdown format to be used in github readmes or other markdown format
 """
 
 
 def generate_colab_link_markdown(github_url_for_notebook: str) -> str:
-    pass
+    colab_link = generate_colab_link(github_url_for_notebook)
+    makrdown_str = "[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]" + \
+        f"({colab_link})"
+
+    return makrdown_str
+
+
+if __name__ == "__main__":
+    gh = "https://github.com/ShawonAshraf/nlu-jointbert-dl2021/blob/main/notebooks/nlu_jointbert_dl21.ipynb"
+    target = "https://colab.research.google.com/github/ShawonAshraf/nlu-jointbert-dl2021/blob/main/notebooks/nlu_jointbert_dl21.ipynb"
+    target_md = "[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ShawonAshraf/nlu-jointbert-dl2021/blob/main/notebooks/nlu_jointbert_dl21.ipynb)"
+
+    assert generate_colab_link(gh) == target
+    assert generate_colab_link_markdown(gh) == target_md
