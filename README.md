@@ -45,3 +45,9 @@ pip install -r requirements.txt
 
 - The entrypoint for the cli tool is in `cli.py` (the `run()` function)
 - `link.py` contains the helpers to generate the links
+
+### Testing
+
+```bash
+python -m unittest discover -s ./tests -p "*_test.py"
+```
