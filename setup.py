@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
 setup(
-    name='mytool',
-    version='0.0.1',
+    name='github-to-colab-link',
+    version='1.0.0',
     author='Shawon Ashraf',
     author_email='shawon13@live.com',
     license='MIT',
@@ -23,6 +23,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        colab-link-gen=cli
+        colab-link-gen=cli:run
     '''
 )
