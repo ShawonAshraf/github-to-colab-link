@@ -2,11 +2,11 @@
 
 [![Build Status](https://dev.azure.com/shawonAshraf/github-to-colab-link/_apis/build/status/ShawonAshraf.github-to-colab-link%20(1)?branchName=main)](https://dev.azure.com/shawonAshraf/github-to-colab-link/_build/latest?definitionId=11&branchName=main)
 
-Sometimes you may want to load a Jupyter notebook from your repo to colab and run it there. Other times you may just want to add a colab link to your repositories readme page. Sure you can download a notebook and then import to colab but that may not always be ideal. The goal of this cli tool is to short-circuit that process so that you don't have to go through the extra clicks.
+Sometimes you may want to load a Jupyter notebook from your repo to colab and run it there. Other times you may just want to add a colab link to your repository's readme page. Sure, you can download a notebook and then import that to colab. However, that may not always be ideal. The goal of this cli tool is to short-circuit that process so that you don't have to go through the extra clicks.
 
 ## Pre-requisites
 
-- __The repo where your notebook is must be public__
+- __The repo containing your notebook is must be public__
 
 ## Installation and Usage
 
