@@ -5,7 +5,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
 setup(
     name='github-to-colab-link',
-    version='1.0.0',
+    version='1.0.1',
     author='Shawon Ashraf',
     author_email='shawon13@live.com',
     license='MIT',
